@@ -1,0 +1,33 @@
+{
+  "name": "zebra-financas",
+  "version": "0.0.1",
+  "description": "",
+  "license": "ISC",
+  "author": "Thyago Carvalho",
+  "type": "module",
+  "main": "root.tsx",
+  "scripts": {
+    "dev": "node ./server.js",
+    "start": "cross-env NODE_ENV=production node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@remix-run/express": "^2.17.2",
+    "@remix-run/node": "^2.17.2",
+    "@remix-run/react": "^2.17.2",
+    "cross-env": "^10.1.0",
+    "express": "^4.21.2",
+    "isbot": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@remix-run/dev": "^2.17.2",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^6.4.1"
+  }
+}
