@@ -1,0 +1,7 @@
+# .prettierignore
+.husky
+node_modules
+dist
+build
+coverage
+package-lock.json
