@@ -4,6 +4,8 @@ import {
     Outlet,
     Scripts,
 } from "@remix-run/react";
+import { Button } from "./components/ui/button";
+import './app.css'
 
 export default function App() {
     return (
@@ -18,6 +20,7 @@ export default function App() {
             </head>
             <body>
                 <h1>Hello world!</h1>
+                <Button>Click me</Button>
                 <Outlet />
                 <Scripts />
             </body>
