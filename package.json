@@ -7,10 +7,11 @@
   "type": "module",
   "main": "root.tsx",
   "scripts": {
-    "dev": "node ./server.js",
-    "start": "cross-env NODE_ENV=production node ./server.js",
+    "dev": "react-router dev",
+    "start": "react-router-serve build/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky"
+    "prepare": "husky",
+    "typecheck": "react-router typegen ** tsc"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -23,9 +24,9 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
-    "@remix-run/express": "^2.17.2",
-    "@remix-run/node": "^2.17.2",
-    "@remix-run/react": "^2.17.2",
+    "@react-router/express": "^7.0.0",
+    "@react-router/fs-routes": "^7.9.6",
+    "@react-router/node": "^7.0.0",
     "@tailwindcss/vite": "^4.1.17",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -36,6 +37,7 @@
     "lucide-react": "^0.553.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router": "^7.0.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
     "vite-tsconfig-paths": "^5.1.4"
@@ -44,7 +46,7 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.39.1",
-    "@remix-run/dev": "^2.17.2",
+    "@react-router/dev": "^7.0.0",
     "@types/react": "^19.2.3",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",

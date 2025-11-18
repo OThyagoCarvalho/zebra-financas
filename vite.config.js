@@ -1,8 +1,8 @@
-import { vitePlugin as remix } from "@remix-run/dev";
+import { reactRouter } from "@react-router/dev/vite";
 import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [remix(), tsConfigPaths(), tailwindcss()],
+  plugins: [reactRouter(), tsConfigPaths(), tailwindcss()],
 });
